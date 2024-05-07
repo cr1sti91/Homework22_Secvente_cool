@@ -43,7 +43,6 @@ static std::optional<size_t> is_coolSequence(const std::vector<size_t>& input, c
         //Secventa nu poate sa inceapa de la indice mai mare decat 'inputSize - K'
         if (inputSize - i >= K)
         {
-            std::cout << "secventa noua" << std::endl;
             //Incepand de la indexul i, stocam in 'seq' K elemente ce urmeaza in vectorul 'input'
             for (size_t k{ i }; k < i + K; k++)
             {
